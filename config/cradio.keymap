@@ -24,41 +24,22 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <0 1>;
+            key-positions = <14 24>;
             bindings = <&kp ESC>;
         };
 
          combo_tab {
             timeout-ms = <50>;
-            key-positions = <10 11>;
+            key-positions = <5 14>;
             bindings = <&kp TAB>;
         };
 
-            combo_ralt {
-            timeout-ms = <50>;
-            key-positions = <17 16>;
-            bindings = <&kp RALT>;
-        };
-
-                    combo_lalt {
-            timeout-ms = <50>;
-            key-positions = <11 12>;
-            bindings = <&kp LALT>;
-        };
 
                            combo_lgui {
             timeout-ms = <50>;
-            key-positions = <12 13>;
+            key-positions = <13 23>;
             bindings = <&kp LGUI>;
         };
-
-
-           combo_rgui {
-            timeout-ms = <50>;
-            key-positions = <17 18>;
-            bindings = <&kp RGUI>;
-        };
-
 
 
     };
@@ -79,10 +60,10 @@
 
        		number_layer {
 		bindings = <
-		&kp Q          &kp W     &kp E     &kp R    &kp T 						&kp Y        &kp NUM_7 &kp NUM_8 &kp NUM_9   &kp P
-		&mt LCTL A     &kp S     &kp D     &kp F    &kp C_RESET 			   	&kp C_RESET  &kp NUM_4 &kp NUM_5 &kp NUM_6 &mt LCTL BACKSPACE
-		&mt LALT MINUS &kp EQUAL &kp UNDER &kp PLUS &kp B				        &kp NUM_0    &kp NUM_1 &kp NUM_2 &kp NUM_3 &mt RALT SLASH
-          				       &mo 1 &mt LSFT SPC  				&kp SPC &kp RET
+		&kp Q          &kp W     &kp E     &kp R    &kp T 			&kp Y        &kp NUM_7 &kp NUM_8 &kp NUM_9   &kp P
+		&mt LCTL A     &kp S     &kp D     &kp F    &kp SQT			&kp DQT  &kp NUM_4 &kp NUM_5 &kp NUM_6 &mt LCTL BACKSPACE
+		&mt LALT MINUS &kp EQUAL &kp UNDER &kp PLUS &kp B		    &kp NUM_0    &kp NUM_1 &kp NUM_2 &kp NUM_3 &mt RALT SLASH
+          				       &mo 1 &mt LSFT SPC  			     	&kp SPC &kp RET
 		>;
 		};
 
