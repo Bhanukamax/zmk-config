@@ -12,6 +12,7 @@
 #define NUM 1
 #define NAV 2
 #define FN 3
+#define BT 4
 
 &mt {
   //  flavor = "tap-preferred";
@@ -19,6 +20,14 @@
 };
 
 / {
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <4>;
+        };
+    };
 
     combos {
         compatible = "zmk,combos";
