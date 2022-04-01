@@ -41,6 +41,12 @@
             bindings = <&kp LGUI>;
         };
 
+        combo_bspc {
+            timeout-ms = <50>;
+            key-positions = <15 25>;
+            bindings = <&kp BSPC>;
+        };
+
         combo_bootloader {
             timeout-ms = <50>;
             key-positions = <16 17 18 19>;
@@ -67,7 +73,7 @@
        		number_layer {
 		bindings = <
 		&kp Q          &kp W     &kp E     &kp R    &kp T 			&kp Y        &kp NUM_7 &kp NUM_8 &kp NUM_9   &kp P
-		&mt LCTL A     &kp S     &kp D     &kp F    &kp SQT			&kp DQT  &kp NUM_4 &kp NUM_5 &kp NUM_6 &mt LCTL BACKSPACE
+		&mt LCTL A     &kp S     &kp D     &kp F    &kp SQT			&kp DQT  &kp NUM_4 &kp NUM_5 &kp NUM_6 &mt LCTL BSPC
 		&mt LALT MINUS &kp EQUAL &kp UNDER &kp PLUS &kp B		    &kp NUM_0    &kp NUM_1 &kp NUM_2 &kp NUM_3 &mt RALT SLASH
           				       &mo 1 &mt LSFT SPC  			     	&kp SPC &kp RET
 		>;
