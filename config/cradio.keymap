@@ -13,6 +13,7 @@
 #define NAV 2
 #define FN 3
 #define BT 4
+#define MOUSE 5
 
 &mt {
   //  flavor = "tap-preferred";
@@ -60,6 +61,12 @@
             timeout-ms = <50>;
             key-positions = <26 27>;
             bindings = <&sl FN>;
+        };
+
+        combo_to_mouse {
+            timeout-ms = <50>;
+            key-positions = <16 17 18>;
+            bindings = <&to MOUSE>;
         };
 
         combo_bootloader {
@@ -118,6 +125,15 @@
 		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  			    &trans          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans
 		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7 	&trans          &kp PG_DN  &kp K_VOL_DN  &trans &trans
 					 &trans &trans  					&trans &trans
+		>;
+		};
+
+		MOUSE {
+		bindings = <
+		&none	&none	&none	    &none	    &none				&none	&none	&none	&none	&none
+		&kp C_PP	&none	&kp C_VOL_DN	&kp C_VOL_UP	    &none				&kp M	&none	&none	&none	&none
+		&kp K_PP	&none	&kp K_VOL_DN	&kp K_VOL_UP	    &none				&none	&none	&none	&none	&none
+		                            &trans      &trans  			&to DEFAULT  &trans
 		>;
 		};
 
