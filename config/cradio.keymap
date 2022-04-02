@@ -56,6 +56,12 @@
             bindings = <&kp BSPC>;
         };
 
+        combo_sl_fn {
+            timeout-ms = <50>;
+            key-positions = <26 27>;
+            bindings = <&sl FN>;
+        };
+
         combo_bootloader {
             timeout-ms = <50>;
             key-positions = <16 17 18 19>;
@@ -97,16 +103,16 @@
 		>;
 		};
 
-		right_layer {
+		FN {
 		bindings = <
-		&kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    			&kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN
-		&kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 			&kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
-		&kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
-					 &trans &trans  					&trans &trans
+		&none	&none	&none	    &none	    &none				&none	&none	&none	&none	&none
+		&C_PP	&none	&C_VOL_DN	&C_VOL_UP	    &none				&none	&none	&none	&none	&none
+		&K_PP	&none	&K_VOL_DN	&K_VOL_UP	    &none				&none	&none	&none	&none	&none
+		                            &trans      &trans  			&trans  &trans
 		>;
 		};
 
-		tri_layer {
+		BT {
 		bindings = <
 		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4      &kp NUM_5 	    &trans     &trans       &trans   &trans  &trans
 		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  			    &trans          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans
