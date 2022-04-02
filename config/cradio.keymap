@@ -131,9 +131,9 @@
 
 		MOUSE {
 		bindings = <
-		&none	&none	&none	    &none	    &none				&none	&none	&none	&mmv MOVE_UP	&none
-		&kp C_PP	&none	&kp C_VOL_DN	&kp C_VOL_UP	    &none				&kp M	&none	&none	&none	&none
-		&kp K_PP	&none	&kp K_VOL_DN	&kp K_VOL_UP	    &none				&none	&none	&none	&none	&none
+		&none	    &none	&none	        &none	            &none				&none	&none	            &mmv MOVE_UP	&none                       &none
+		&kp C_PP	&none	&kp C_VOL_DN	&kp C_VOL_UP	    &none				&kp M	&mmv MOVE_RIGHT	    &mmv MOVE_DOWN	&mmv MOVE_RIGHT	            &none
+		&kp K_PP	&none	&kp K_VOL_DN	&kp K_VOL_UP	    &none				&none	&none	            &none	        &none	                    &none
 		                            &trans      &trans  			&to DEFAULT  &trans
 		>;
 		};
