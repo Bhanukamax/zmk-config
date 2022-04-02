@@ -106,7 +106,7 @@
 		bindings = <
 		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5		          &kp HOME      &kp PG_UP   &kp PG_DN   &kp END     &kp NUM_0
 		&kp LCTL    &kp LSFT    &kp LALT      &kp LGUI     &kp ESC 		      &kp LEFT      &kp DOWN    &kp UP      &kp RIGHT   &kp BSPC
-		&bt BT_CLR &bt BT_SEL 0 	&bt BT_SEL 1 &bt BT_SEL 2  &key_repeat  	      &kp LG(GRAVE) &kp GRAVE   &kp LBKT    &kp RBKT    &kp DEL
+		&bt BT_CLR &bt BT_SEL 0 	&bt BT_SEL 1 &bt BT_SEL 2  &trans  	      &kp LG(GRAVE) &kp GRAVE   &kp LBKT    &kp RBKT    &kp DEL
 					 &trans &trans  					&trans &trans
 		>;
 		};
