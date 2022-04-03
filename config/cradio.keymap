@@ -33,7 +33,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        hml: homerow_mods {
+        hml: homerow_layers {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
