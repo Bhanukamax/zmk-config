@@ -158,7 +158,7 @@
 
 		MOUSE {
 		bindings = <
-		&none	    &kp LC(W)	    &none	        &kp LC(R)	        &kp LC(T)		&kp LA(LEFT)	&mwh SCROLL_DOWN	&mmv MOVE_UP	&mwh SCROLL_UP          &kp LA(RIGHT)
+		&kp LALT	&kp LC(W)	    &none	        &kp LC(R)	        &kp LC(T)		&kp LA(LEFT)	&mwh SCROLL_DOWN	&mmv MOVE_UP	&mwh SCROLL_UP          &kp LA(RIGHT)
 		&kp LC(A)	&kp LS(TAB)	    &kp RALT	    &kp TAB	            &none	        &kp M	        &mmv MOVE_LEFT	    &mmv MOVE_DOWN	&mmv MOVE_RIGHT	        &none
 		&kp LC(Z)	&kp LC(X)	    &kp LC(C)	    &kp LC(V)	        &kp ESC		    &none	        &mkp RCLK	        &none	        &none	                &kp LALT
 		                                            &trans              &trans  	    &to DEFAULT     &mkp LCLK
