@@ -90,10 +90,10 @@
 
        		DEFAULT {
 		bindings = <
-		&mt LCTL Q      &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P
-		&mt LCTL A &kp S &kp D &kp F &kp G 			        	&kp H &kp J &kp K &kp L &mt LCTL SEMI
-		&mt LALT Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp CMMA &kp DOT &mt RALT SLASH
-          				       &mo NAV &mt LSFT SPC  				&mo NUM &kp RET
+		&mt LCTL Q	    &kp W	 &kp E	&kp R	 &kp T 					&kp Y	 &kp U	 &kp I		&kp O	    &kp P
+		&mt LCTL A	    &kp S	 &kp D	&kp F	 &kp G 			       	&kp H	 &kp J	 &kp K		&kp L	    &mt LCTL SEMI
+		&mt LALT Z		&kp X	 &kp C	&kp V	 &kp B				    &kp N	 &kp M	 &kp CMMA	&kp DOT		&mt RALT SLASH
+          				                &mo NAV  &mt LSFT SPC  			&mo NUM  &kp RET
 		>;
 		};
 
@@ -110,28 +110,28 @@
 
        		NAV {
 		bindings = <
-		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5		          &kp HOME      &kp PG_UP   &kp PG_DN   &kp END     &kp NUM_0
-		&kp LCTL    &kp LSFT    &kp LALT      &kp LGUI     &kp ESC 		          &kp LEFT      &kp DOWN    &kp UP      &kp RIGHT   &kp BSPC
-		&bt BT_CLR &bt BT_SEL 0 	&bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3       &kp LG(GRAVE) &kp GRAVE   &kp LBKT    &kp RBKT    &kp DEL
-					 &trans &trans  					&trans &trans
+		&kp NUM_1   &kp NUM_2       &kp NUM_3    &kp NUM_4      &kp NUM_5		     &kp HOME         &kp PG_UP   &kp PG_DN   &kp END     &kp NUM_0
+		&kp LCTL    &kp LSFT        &kp LALT     &kp LGUI       &kp ESC 		     &kp LEFT         &kp DOWN    &kp UP      &kp RIGHT   &kp BSPC
+		&bt BT_CLR  &bt BT_SEL 0 	&bt BT_SEL 1 &bt BT_SEL 2   &bt BT_SEL 3         &kp LG(GRAVE)    &kp GRAVE   &kp LBKT    &kp RBKT    &kp DEL
+					                             &trans         &trans  			 &trans           &trans
 		>;
 		};
 
 		FN {
 		bindings = <
-		&none	&none	&none	    &none	    &none				&none	&none	&none	&none	&none
+		&none	    &none	&none	        &none	            &none				&none	&none	&none	&none	&none
 		&kp C_PP	&none	&kp C_VOL_DN	&kp C_VOL_UP	    &none				&none	&none	&none	&none	&none
 		&kp K_PP	&none	&kp K_VOL_DN	&kp K_VOL_UP	    &none				&none	&none	&none	&none	&none
-		                            &trans      &trans  			&trans  &trans
+                                            &trans              &trans  			&trans  &trans
 		>;
 		};
 
 		BT {
 		bindings = <
-		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4      &kp NUM_5 	    &trans     &trans       &trans   &trans  &trans
-		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  			    &trans          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans
-		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7 	&trans          &kp PG_DN  &kp K_VOL_DN  &trans &trans
-					 &trans &trans  					&trans &trans
+		&kp NUM_1	    &kp NUM_2	    &kp NUM_3	    &kp NUM_4	&kp NUM_5 		    &trans	    &trans			 &trans			 &trans			 &trans
+		&kp F1	        &kp F2	        &kp F3	        &kp F4		&kp F5  		    &trans	    &bt BT_SEL 0	 &bt BT_SEL 1	 &bt BT_SEL 2	 &trans
+		&bt BT_CLR	    &bt BT_NXT		&bt BT_PRV	    &kp F6		&kp F7 				&trans	    &kp PG_DN		 &kp K_VOL_DN	 &trans			 &trans
+					                                    &trans      &trans  			&trans      &trans
 		>;
 		};
 
@@ -140,7 +140,7 @@
 		&none	    &none	&none	        &none	            &none				&none	        &mwh SCROLL_DOWN	&mmv MOVE_UP	&mwh SCROLL_UP              &none
 		&kp C_PP	&none	&kp C_VOL_DN	&kp C_VOL_UP	    &none				&kp M	        &mmv MOVE_LEFT	    &mmv MOVE_DOWN	&mmv MOVE_RIGHT	            &none
 		&kp K_PP	&none	&kp K_VOL_DN	&kp K_VOL_UP	    &none				&none	        &mkp RCLK	            &none	        &none	                &none
-		                            &trans      &trans  	    		            &to DEFAULT     &mkp LCLK
+		                                    &trans              &trans  	        &to DEFAULT     &mkp LCLK
 		>;
 		};
 
