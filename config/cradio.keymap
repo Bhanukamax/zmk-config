@@ -56,14 +56,14 @@
             bindings = <&mo NUM>, <&kp LS(TAB)>;
             mods = <(MOD_RALT)>;
         };
-        navstab: num_tab {
+        navstab: nav_tab {
             compatible = "zmk,behavior-mod-morph";
             label = "NAV_ALT_SHIFT_TAB";
             #binding-cells = <0>;
             bindings = <&mo NAV>, <&kp LS(TAB)>;
             mods = <(MOD_LALT)>;
         };
-        shftspctab: ret_alt_tab {
+        shftspctab: shift_space_tab {
             compatible = "zmk,behavior-mod-morph";
             label = "SHIFT_SPACE_ALT_TAB";
             #binding-cells = <0>;
