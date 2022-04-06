@@ -70,6 +70,13 @@
             bindings = <&mt LSFT SPC>, <&kp TAB>;
             mods = <(MOD_LALT)>;
         };
+        ctrld: ctrl_d_and_mouse_d {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CTRL_D_AND_MOUSE_D";
+            #binding-cells = <0>;
+            bindings = <&hml MOUSE D>, <&kp D>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
     };
 
     conditional_layers {
@@ -140,7 +147,7 @@
        		DEFAULT {
 		bindings = <
 		&mt LALT Q	    &kp W	 &kp E	        &kp R	    &kp T 					&kp Y	 &kp U	 &kp I		&kp O	    &kp P
-		&hm LCTL A	    &kp S	 &hml MOUSE D	&kp F	    &kp G 			       	&kp H	 &kp J	 &kp K		&kp L	    &hm LCTL SEMI
+		&hm LCTL A	    &kp S	 &ctrld	        &kp F	    &kp G 			       	&kp H	 &kp J	 &kp K		&kp L	    &hm LCTL SEMI
 		&hm LALT Z		&kp X	 &kp C	        &kp V	    &kp B				    &kp N	 &kp M	 &kp CMMA	&kp DOT		&hm RALT SLASH
           				                        &navstab    &shftspctab  			&numtab  &rettab
 		>;
