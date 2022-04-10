@@ -146,10 +146,10 @@
 
        		DEFAULT {
 		bindings = <
-		&hm LGUI Q	    &kp W	 &kp E	        &kp R	    &kp T 					&kp Y	 &kp U	 &kp I		&kp O	    &hm RGUI P
-		&hm LCTL A	    &kp S	 &ctrld	        &kp F	    &kp G 			       	&kp H	 &kp J	 &kp K		&kp L	    &hm LCTL SEMI
-		&hm LALT  Z		&kp X	 &kp C	        &kp V	    &kp B				    &kp N	 &kp M	 &kp CMMA	&kp DOT		&hm RALT SLASH
-          				                        &mo NAV    &mt LSFT SPC  			&mo NUM  &kp RET
+		&hm LGUI Q	    &kp W	 &kp E	        &kp R	     &kp T 				  	&kp Y	   &kp U	 &kp I		&kp O	    &hm RGUI P
+		&hm LCTL A	    &kp S	 &ctrld	        &kp F	     &kp G 			      &kp H	   &kp J	 &kp K		&kp L	    &hm LCTL SEMI
+		&hm LALT Z	  	&kp X	 &kp C	        &kp V	     &kp B				    &kp N	   &kp M	 &kp CMMA	&kp DOT		&hm RALT SLASH
+          				                        &mo NAV    &mt LSFT SPC  	  &mo NUM  &kp RET
 		>;
 		};
 
@@ -157,46 +157,46 @@
 
        		NUM {
 		bindings = <
-		&kp LT		 &kp LBKT	 &kp LPAR	  &kp LBRC	 &kp TAB 				&kp Y		  &kp NUM_7		&kp NUM_8	 &kp NUM_9	 &kp RALT
-		&kp GT		 &kp RBKT	 &kp RPAR	  &kp RBRC   &kp SQT				&kp DQT		  &kp NUM_4		&kp NUM_5	 &kp NUM_6	 &kp BSPC
-		&kp MINUS	 &kp EQUAL	 &kp UNDER	  &kp PLUS	 &kp GRAVE			    &kp NUM_0	  &kp NUM_1		&kp NUM_2	 &kp NUM_3	 &kp BSLH
-		                                      &kp LCTL   &trans  				&trans        &trans
+		&kp LT		 &kp LBKT 	 &kp LPAR	    &kp LBRC	 &kp TAB 				&kp Y		    &kp NUM_7		&kp NUM_8	 &kp NUM_9	 &kp RALT
+		&kp GT		 &kp RBKT 	 &kp RPAR	    &kp RBRC   &kp SQT				&kp DQT		  &kp NUM_4		&kp NUM_5	 &kp NUM_6	 &kp BSPC
+		&kp MINUS	 &kp EQUAL	 &kp UNDER	  &kp PLUS	 &kp GRAVE			&kp NUM_0	  &kp NUM_1		&kp NUM_2	 &kp NUM_3	 &kp BSLH
+		                                    &kp LCTL   &trans  				&trans      &trans
 		>;
 		};
 
        		NAV {
 		bindings = <
-		&kp NUM_1   &kp NUM_2       &kp NUM_3    &kp NUM_4      &kp NUM_5		     &kp HOME         &kp PG_UP   &kp PG_DN   &kp END     &kp NUM_0
-		&kp LCTL    &kp LSFT        &kp LALT     &kp LGUI       &kp ESC 		     &kp LEFT         &kp DOWN    &kp UP      &kp RIGHT   &kp BSPC
-		&bt BT_CLR  &bt BT_SEL 0 	&bt BT_SEL 1 &bt BT_SEL 2   &bt BT_SEL 3         &kp LG(GRAVE)    &kp GRAVE   &kp LBKT    &kp RBKT    &kp DEL
-					                             &trans         &trans  			 &trans           &trans
+		&kp NUM_1   &kp NUM_2       &kp NUM_3     &kp NUM_4      &kp NUM_5		        &kp HOME         &kp PG_UP   &kp PG_DN   &kp END     &kp NUM_0
+		&kp LCTL    &kp LSFT        &kp LALT      &kp LGUI       &kp ESC 		          &kp LEFT         &kp DOWN    &kp UP      &kp RIGHT   &kp BSPC
+		&bt BT_CLR  &bt BT_SEL 0  	&bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3         &kp LG(GRAVE)    &kp GRAVE   &kp LBKT    &kp RBKT    &kp DEL
+					                                    &trans         &trans  		          &trans           &trans
 		>;
 		};
 
 		FN {
 		bindings = <
-		&kp F1	    &kp F2	        &kp F3	        &kp F4	            &kp F5				&kp F6	&kp F7	&kp F8	&kp F9	&kp F10
-		&kp C_PP	&kp C_MUTE	    &kp C_VOL_DN	&kp C_VOL_UP	    &none				&none	&none	&none	&kp F11	&kp F12
-		&kp C_PREV	&kp C_NEXT	    &kp C_BRI_DN	&kp C_BRI_UP	    &none				&none	&none	&none	&none	&none
-                                                    &trans              &trans  			&trans  &trans
+		&kp F1	    &kp F2	        &kp F3	      &kp F4	          &kp F				&kp F6	&kp F7	&kp F8	&kp F9	&kp F10
+		&kp C_PP	  &kp C_MUTE	    &kp C_VOL_DN	&kp C_VOL_UP	    &none				&none 	&none 	&none	  &kp F11	&kp F12
+		&kp C_PREV	&kp C_NEXT	    &kp C_BRI_DN	&kp C_BRI_UP	    &none				&none 	&none 	&none  	&none	  &none
+                                                    &trans      &trans 			&trans  &trans
 		>;
 		};
 
 		BT {
 		bindings = <
-		&kp NUM_1	    &kp NUM_2	    &kp NUM_3	    &kp NUM_4	&kp NUM_5 		    &trans	    &trans			 &trans			 &trans			 &trans
-		&kp F1	        &kp F2	        &kp F3	        &kp F4		&kp F5  		    &trans	    &bt BT_SEL 0	 &bt BT_SEL 1	 &bt BT_SEL 2	 &trans
-		&bt BT_CLR	    &bt BT_NXT		&bt BT_PRV	    &kp F6		&kp F7 				&trans	    &kp PG_DN		 &kp K_VOL_DN	 &trans			 &trans
-					                                    &trans      &trans  			&trans      &trans
+		&kp NUM_1	    &kp NUM_2	    &kp NUM_3	    &kp NUM_4	&kp NUM_5     &trans	    &trans	  		 &trans	  		 &trans			   &trans
+		&kp F1	      &kp F2	      &kp F3	      &kp F4		&kp F5  	    &trans	    &bt BT_SEL 0	 &bt BT_SEL 1	 &bt BT_SEL 2	 &trans
+		&bt BT_CLR	  &bt BT_NXT		&bt BT_PRV    &kp F6		&kp F7 				&trans	    &kp PG_DN 		 &kp K_VOL_DN	 &trans		  	 &trans
+					                                    &trans    &trans  			&trans      &trans
 		>;
 		};
 
 		MOUSE {
 		bindings = <
-		&kp LALT	&kp LC(W)	    &none	        &kp LC(R)	        &kp LC(T)		&kp LA(LEFT)	&mwh SCROLL_DOWN	&mmv MOVE_UP	&mwh SCROLL_UP          &kp LA(RIGHT)
-		&kp LC(A)	&kp LS(TAB)	    &kp RALT	    &kp TAB	            &none	        &kp M	        &mmv MOVE_LEFT	    &mmv MOVE_DOWN	&mmv MOVE_RIGHT	        &none
-		&kp LC(Z)	&kp LC(X)	    &kp LC(C)	    &kp LC(V)	        &kp ESC		    &none	        &mkp RCLK	        &none	        &none	                &kp LALT
-		                                            &trans              &trans  	    &to DEFAULT     &mkp LCLK
+		&kp LALT	&kp LC(W)	    &none	        &kp LC(R)	        &kp LC(T)		&kp LA(LEFT)	&mwh SCROLL_DOWN	&mmv MOVE_UP	  &mwh SCROLL_UP        &kp LA(RIGHT)
+		&kp LC(A)	&kp LS(TAB)	  &kp RALT	    &kp TAB	          &none	      &kp M	        &mmv MOVE_LEFT    &mmv MOVE_DOWN	&mmv MOVE_RIGHT	      &none
+		&kp LC(Z)	&kp LC(X)	    &kp LC(C)	    &kp LC(V)	        &kp ESC	    &none	        &mkp RCLK	        &none	          &none	                &kp LALT
+		                                      &trans            &trans 	    &to DEFAULT   &mkp LCLK
 		>;
 		};
 
