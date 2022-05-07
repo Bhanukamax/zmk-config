@@ -77,6 +77,13 @@
             bindings = <&hml MOUSE D>, <&kp D>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
+        ctrlp_hm_p: ctrl_p_and_hm_p {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CTRL_P_AND_HM_P";
+            #binding-cells = <0>;
+            bindings = <&hm RGUI P>, <&kp P>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
     };
 
     conditional_layers {
@@ -146,10 +153,10 @@
 
        		DEFAULT {
 		bindings = <
-		&hm LGUI Q	    &kp W	       &kp E	        &kp R	     &kp T 				  	&kp Y	   &kp U	 &kp I		&kp O	          &hm RGUI P
-		&hm LCTL A	    &kp S	       &ctrld	        &kp F	     &kp G 			      &kp H	   &kp J	 &kp K		&kp L	          &hm LCTL SEMI
-		&hm LGUI Z	  	&hm LALT X	 &kp C	        &kp V	     &kp B				    &kp N	   &kp M	 &kp CMMA	&hm RALT DOT		&hm RGUI SLASH
-          				                              &mo NAV    &mt LSFT SPC  	  &mo NUM  &kp RET
+		&hm LGUI Q	    &kp W	       &kp E	        &kp R	     &kp T 				  	&kp Y	       &kp U	 &kp I		&kp O	          &ctrlp_hm_p
+		&hm LCTL A	    &kp S	       &ctrld	        &kp F	     &kp G 			      &kp H	       &kp J	 &kp K		&kp L	          &hm LCTL SEMI
+		&hm LGUI Z	  	&hm LALT X	 &kp C	        &kp V	     &kp B				    &kp N	       &kp M	 &kp CMMA	&hm RALT DOT		&hm RGUI SLASH
+          				                              &mo NAV    &mt LSFT SPC  	  &mt NUM SPC  &kp RET
 		>;
 		};
 
