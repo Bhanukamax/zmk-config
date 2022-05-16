@@ -153,9 +153,9 @@
 
        		DEFAULT {
 		bindings = <
-		&hm LGUI Q	    &kp W	       &kp E	        &kp R	     &kp T 				  	&kp Y	       &kp U	 &kp I		&kp O	          &ctrlp_hm_p
-		&hm LCTL A	    &kp S	       &ctrld	        &kp F	     &kp G 			      &kp H	       &kp J	 &kp K		&kp L	          &hm LCTL SEMI
-		&hm LGUI Z	  	&hm LALT X	 &kp C	        &kp V	     &kp B				    &kp N	       &kp M	 &kp CMMA	&hm RALT DOT		&hm RGUI SLASH
+		&hm LGUI Q	    &kp W	       &kp E	        &kp R	     &kp T 				  &kp Y	       &kp U	 &kp I		&kp O	        &ctrlp_hm_p
+		&hm LCTL A	    &hm LALT S	   &ctrld	        &kp F	     &kp G 			      &kp H	       &kp J	 &kp K		&hm RALT L      &hm LCTL SEMI
+		&hm LGUI Z	  	&hm LALT X     &kp C	        &kp V	     &kp B				  &kp N	       &kp M	 &kp CMMA	&hm RALT DOT	&hm RGUI SLASH
           				                              &mo NAV    &mt LSFT SPC  	  &mo NUM      &kp RET
 		>;
 		};
