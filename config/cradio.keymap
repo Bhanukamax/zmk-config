@@ -81,7 +81,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "CTRL_P_AND_HM_P";
             #binding-cells = <0>;
-            bindings = <&hm RGUI P>, <&kp P>;
+            bindings = <&hm F13 P>, <&kp P>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
     };
@@ -153,7 +153,7 @@
 
        		DEFAULT {
 		bindings = <
-		&hm F13 Q	    &kp W	       &kp E	        &kp R	         &kp T 				  &kp Y	       &kp U	     &kp I		&kp O	        &ctrlp_hm_p
+		&hm LGUI Q	    &kp W	       &kp E	        &kp R	         &kp T 				  &kp Y	       &kp U	     &kp I		&kp O	        &ctrlp_hm_p
 		&hm LCTL A	    &hm LALT S	   &ctrld	        &hm LGUI F	     &kp G 			      &kp H	       &hm RGUI J	 &kp K		&hm RALT L      &hm LCTL SEMI
 		&hm LGUI Z	  	&hm LALT X     &kp C	        &kp V	         &kp B				  &kp N	       &kp M	     &kp CMMA	&hm RALT DOT	&hm RGUI SLASH
           				                              &mo NAV    &mt LSFT SPC  	  &mo NUM      &kp RET
