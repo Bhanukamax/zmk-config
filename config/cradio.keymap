@@ -42,27 +42,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        rettab: ret_alt_tab {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RET_ALT_TAB";
-            #binding-cells = <0>;
-            bindings = <&kp RET>, <&kp TAB>;
-            mods = <(MOD_RALT)>;
-        };
-        numtab: num_tab {
-            compatible = "zmk,behavior-mod-morph";
-            label = "NUM_ALT_TAB";
-            #binding-cells = <0>;
-            bindings = <&mo NUM>, <&kp LS(TAB)>;
-            mods = <(MOD_RALT)>;
-        };
-        navstab: nav_tab {
-            compatible = "zmk,behavior-mod-morph";
-            label = "NAV_ALT_SHIFT_TAB";
-            #binding-cells = <0>;
-            bindings = <&mo NAV>, <&kp LS(TAB)>;
-            mods = <(MOD_LALT)>;
-        };
         shftspctab: shift_space_tab {
             compatible = "zmk,behavior-mod-morph";
             label = "SHIFT_SPACE_ALT_TAB";
@@ -156,7 +135,7 @@
      &hm LGUI Q	    &kp W	        &kp E	        &kp R	         &kp T 				   &kp Y	        &kp U	     &kp I	      	  &kp O	        &ctrlp_hm_p
      &hm LCTL A	    &hm LALT S	  &ctrld	      &kp F	         &kp G 			     &kp H	        &kp J	     &kp K		        &hm RALT L    &hm LCTL SEMI
      &hm LGUI Z	  	&hm LALT X    &hm LSFT C    &kp V	         &kp B		   		 &kp N	        &kp M	     &hm RSFT CMMA	  &hm RALT DOT	&hm RGUI SLASH
-          				                              &mo NAV        &mt LSFT SPC  	 &mo NUM        &kp RET
+          				                              &mo NAV        &mt LSFT SPC  	 &hml nav ESC        &hm RCTL RET
 		>;
 		};
 
