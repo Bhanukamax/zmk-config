@@ -130,17 +130,17 @@
 		bindings = <
      &hm LGUI Q  &kp W       &kp E       &kp R   &kp T	   &kp Y    &kp U   &kp I     &kp O         &ctrlp_hm_p
      &hm LCTL A  &kp S       &ctrld	     &kp F   &kp G     &kp H    &kp J   &kp K     &kp L         &hm RCTL SEMI
-     &hm LGUI Z  &hm LALT X  &hm LSFT C  &kp V   &kp B 		 &kp N    &kp M   &kp CMMA  &hm RALT DOT  &hm RGUI SLASH
+     &hm LGUI Z  &hm LALT X  &hm LSFT C  &kp V   &kp B 		 &kp N    &kp M   &kp CMMA  &hm RALT DOT  &hm RGUI SQT
                                          &mo NAV &mt LSFT SPC  	 &mo NUM  &hm LCTL RET
 		>;
 		};
 
           DVORAK {
 		bindings = <
-     &hm LGUI SEMI &kp CMMA    &kp DOT     &kp P   &kp Y	   &kp F    &kp G   &kp C  &kp R       &kp L
-     &hm LCTL A    &kp O	     &kp E       &hm LSFT U   &kp I     &kp D    &hm RSFT H   &kp T  &kp N       &hm RCTL S
-     &hm LGUI SLASH  &hm LALT Q  &hm LSFT J  &kp K   &kp X 		 &kp B    &kp M   &kp W  &hm RALT V  &hm RGUI Z
-                                         &mo NAV &mt LSFT SPC  	 &mo NUM  &hm LCTL RET
+     &hm LGUI SEMI &kp CMMA    &kp DOT     &kp P       &kp Y	   &kp F    &kp G        &kp C  &kp R       &kp L
+     &hm LCTL A    &kp O	     &kp E       &hm LSFT U  &kp I     &kp D    &hm RSFT H   &kp T  &kp N       &hm RCTL S
+     &hm LGUI SQT  &hm LALT Q  &hm LSFT J  &kp K       &kp X 		 &kp B    &kp M        &kp W  &hm RALT V  &hm RGUI Z
+                                           &mo NAV &mt LSFT SPC  	 &mo NUM  &hm LCTL RET
 		>;
 		};
 
@@ -148,7 +148,7 @@
        		NUM {
 		bindings = <
 		&kp LT		 &kp LBKT 	 &kp LPAR	    &kp LBRC	 &kp TAB 				&kp ESC     &kp NUM_7		&kp NUM_8	 &kp NUM_9	 &kp RALT
-		&kp GT		 &kp RBKT 	 &kp RPAR	    &kp RBRC   &kp SQT				&kp DQT		  &kp NUM_4		&kp NUM_5	 &kp NUM_6	 &kp BSPC
+		&kp GT		 &kp RBKT 	 &kp RPAR	    &kp RBRC   &kp SLASH			&kp QMARK		  &kp NUM_4		&kp NUM_5	 &kp NUM_6	 &kp BSPC
 		&kp MINUS	 &kp EQUAL	 &kp UNDER	  &kp PLUS	 &kp GRAVE			&kp NUM_0	  &kp NUM_1		&kp NUM_2	 &kp NUM_3	 &kp BSLH
 		                                    &trans     &trans  				&trans      &trans
 		>;
