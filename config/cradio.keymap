@@ -10,12 +10,28 @@
 #include <dt-bindings/zmk/mouse.h>
 
 #define DEFAULT 0
-#define DVORAK 1
 #define NUM 2
 #define NAV 3
 #define FN 4
 #define BT 5
 #define MOUSE 6
+
+#define HM_A &hm LSFT A
+#define HM_O &hm LCTRL O
+#define HM_E &hm LALT E
+#define HM_U &hm LGUI U
+
+#define HM_S &hm RSFT S
+#define HM_N &hm RCTRL N
+#define HM_T &hm RALT T
+#define HM_H &hm RGUI H
+
+#define HM_Z &hm RGUI Z
+
+#define HM_GT   &hm RSFT GH
+#define HM_RBKT &hm RCTRL RBKT
+#define HM_RPAR &hm RALT RPAR
+#define HM_RBRC &hm RGUI RBRC
 
 &mt {
   //  flavor = "tap-preferred";
@@ -126,29 +142,19 @@
         keymap {
                 compatible = "zmk,keymap";
 
-       		DEFAULT {
+                   DEFAULT {
 		bindings = <
-     &hm LGUI Q  &kp W       &kp E       &kp R   &kp T	   &kp Y    &kp U   &kp I     &kp O         &ctrlp_hm_p
-     &hm LCTL A  &kp S       &ctrld	     &kp F   &kp G     &kp H    &kp J   &kp K     &kp L         &hm RCTL SEMI
-     &hm LGUI Z  &hm LALT X  &hm LSFT C  &kp V   &kp B 		 &kp N    &kp M   &kp CMMA  &hm RALT DOT  &hm RGUI SQT
-                                         &mo NAV &mt LSFT SPC  	 &mo NUM  &hm LCTL RET
+      &kp SQT   &kp CMMA      &kp DOT   &kp P       &kp Y    &kp F    &kp G   &kp C    &kp R    &kp L
+      HM_A      HM_O	        HM_E      HM_U        &kp I    &kp D    HM_H    HM_T     HM_N     HM_S
+      &kp SEMI  &kp Q         &kp J     &kp K       &kp X    &kp B    &kp M   &kp W    &kp V    HM_Z
+      &mo NAV   &mt LSFT SPC  &mo NUM   &hm LCTL RET
 		>;
 		};
-
-          DVORAK {
-		bindings = <
-     &hm LCTL SQT &hm LALT CMMA    &hm GUI DOT     &kp P       &kp Y	   &kp F    &kp G        &hm RGUI C  &hm RALT R       &hm RCTL L
-     &hm LSFT A    &kp O	     &kp E       &hm LSFT U  &kp I     &kp D    &hm RSFT H   &kp T  &kp N       &hm RSFT S
-     &hm LGUI SEMI  &hm LALT Q  &hm LCTL J  &kp K       &kp X 		 &kp B    &kp M        &hm RCTL W  &hm RALT V  &hm RGUI Z
-                                           &mo NAV &mt LSFT SPC  	 &mo NUM  &hm LCTL RET
-		>;
-		};
-
 
        		NUM {
 		bindings = <
 		&kp LT		 &kp LBKT 	 &kp LPAR	    &kp LBRC	 &kp TAB 				&kp ESC     &kp NUM_7		&kp NUM_8	 &kp NUM_9	 &kp RALT
-		&kp GT		 &kp RBKT 	 &kp RPAR	    &kp RBRC   &kp SLASH			&kp QMARK		  &kp NUM_4		&kp NUM_5	 &kp NUM_6	 &kp BSPC
+		HM_GT		   HM_RBKT 	   HM_RPAR	    HM_RBRC    &kp SLASH		  &kp QMARK		  &kp NUM_4		&kp NUM_5	 &kp NUM_6	 &kp BSPC
 		&kp MINUS	 &kp EQUAL	 &kp UNDER	  &kp PLUS	 &kp GRAVE			&kp NUM_0	  &kp NUM_1		&kp NUM_2	 &kp NUM_3	 &kp BSLH
 		                                    &trans     &trans  				&trans      &trans
 		>;
@@ -166,7 +172,7 @@
 		FN {
 		bindings = <
 		&kp F1	    &kp F2	        &kp F3	      &kp F4	          &kp F5			&kp F6	&kp F7	&kp F8	&kp F9	&kp F10
-		&kp C_PP	  &kp C_MUTE	    &kp C_VOL_DN	&kp C_VOL_UP	    &to DEFAULT &to DVORAK 	&none	  &kp F11	&kp F12
+		&kp C_PP	  &kp C_MUTE	    &kp C_VOL_DN	&kp C_VOL_UP	    &none       &none 	&none	  &none   &kp F11	&kp F12
 		&kp C_PREV	&kp C_NEXT	    &kp C_BRI_DN	&kp C_BRI_UP	    &none				&none 	&none 	&none  	&none	  &none
                                                     &trans      &trans 			&trans  &trans
 		>;
