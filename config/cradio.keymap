@@ -137,7 +137,7 @@
 
           DVORAK {
 		bindings = <
-     &hm LCTL SQT &hm LALT CMMA    &kp DOT     &hm LGUI P       &kp Y	   &kp F    &hm RGUI G        &kp C  &hm RSFT R       &hm RCTL L
+     &hm LCTL SQT &hm LALT CMMA    &hm GUI DOT     &kp P       &kp Y	   &kp F    &kp G        &kp RGUI C  &hm RALT R       &hm RCTL L
      &hm LSFT A    &kp O	     &kp E       &hm LSFT U  &kp I     &kp D    &hm RSFT H   &kp T  &kp N       &hm RSFT S
      &hm LGUI SEMI  &hm LALT Q  &hm LCTL J  &kp K       &kp X 		 &kp B    &kp M        &hm RCTL W  &hm RALT V  &hm RGUI Z
                                            &mo NAV &mt LSFT SPC  	 &mo NUM  &hm LCTL RET
