@@ -17,6 +17,8 @@
 #define BT 5
 #define MOUSE 6
 
+#define HM_A  &hm LSFT A
+
 &mt {
   //  flavor = "tap-preferred";
    // tapping_term_ms = <200>;
@@ -140,7 +142,7 @@
        //┌─────────┬─────────┬─────────┬─────────┬─────────┐                            ┌─────────┬─────────┬─────────┬─────────┬─────────┐
           &hm LCTL SQT &hm LALT CMMA    &hm GUI DOT     &kp P                          &kp Y	   &kp F    &kp G      &hm RGUI C  &hm RALT R    &hm RCTL L
        //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-         &hm LSFT A    &kp O	     &kp E       &hm LSFT U  &kp I                       &kp D    &hm RSFT H   &kp T  &kp N       &hm RSFT S
+         HM_A    &kp O	     &kp E       &hm LSFT U  &kp I                       &kp D    &hm RSFT H   &kp T  &kp N       &hm RSFT S
        //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
          &hm LGUI SEMI  &hm LALT Q  &hm LCTL J  &kp K       &kp X                    	 &kp B    &kp M        &hm RCTL W  &hm RALT V  &hm RGUI Z
        //└─────────┴─────────┴─────────┴─────┬───┴─────┬───┼─────────┐        ┌─────────┼───┬─────┴───┬─────┴─────────┴─────────┴─────────┘
