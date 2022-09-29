@@ -36,44 +36,44 @@
 
 &mt {
   //  flavor = "tap-preferred";
-   // tapping_term_ms = <200>;
+  // tapping_term_ms = <200>;
 };
 
 / {
 
-    behaviors {
-        hml: homerow_layers {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_LAYERS";
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&mo>, <&kp>;
-        };
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-        rettab: ret_alt_tab {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RET_ALT_TAB";
-            #binding-cells = <0>;
-            bindings = <&kp RET>, <&kp TAB>;
-            mods = <(MOD_RALT)>;
-        };
-        numtab: num_tab {
-            compatible = "zmk,behavior-mod-morph";
-            label = "NUM_ALT_TAB";
-            #binding-cells = <0>;
-            bindings = <&mo NUM>, <&kp LS(TAB)>;
-            mods = <(MOD_RALT)>;
-        };
+  behaviors {
+  hml: homerow_layers {
+      compatible = "zmk,behavior-hold-tap";
+      label = "HOMEROW_LAYERS";
+#binding-cells = <2>;
+      tapping-term-ms = <300>;
+      quick-tap-ms = <0>;
+      flavor = "tap-preferred";
+      bindings = <&mo>, <&kp>;
+    };
+  hm: homerow_mods {
+      compatible = "zmk,behavior-hold-tap";
+      label = "HOMEROW_MODS";
+#binding-cells = <2>;
+      tapping-term-ms = <250>;
+      quick-tap-ms = <0>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&kp>;
+    };
+  rettab: ret_alt_tab {
+      compatible = "zmk,behavior-mod-morph";
+      label = "RET_ALT_TAB";
+#binding-cells = <0>;
+      bindings = <&kp RET>, <&kp TAB>;
+      mods = <(MOD_RALT)>;
+    };
+  numtab: num_tab {
+      compatible = "zmk,behavior-mod-morph";
+      label = "NUM_ALT_TAB";
+#binding-cells = <0>;
+      bindings = <&mo NUM>, <&kp LS(TAB)>;
+      mods = <(MOD_RALT)>;
+};
         navstab: nav_tab {
             compatible = "zmk,behavior-mod-morph";
             label = "NAV_ALT_SHIFT_TAB";
@@ -140,79 +140,79 @@
 
      */
 
-        keymap {
-                compatible = "zmk,keymap";
+    keymap 	{
+      compatible = "zmk,keymap";
 
-       		DEFAULT {
-		bindings = <
-       //┌─────────┬─────────┬─────────┬─────────┬─────────┐                            ┌─────────┬─────────┬─────────┬─────────┬─────────┐
-         HM_SQT    &kp CMMA  &kp DOT   &kp P     &kp Y	                                &kp F    &kp G      &kp C     &kp R     HM_L
-       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-         HM_A      HM_O	     HM_E      HM_U      &kp I                                  &kp D      HM_H     HM_T      HM_N      HM_S
-       //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-         &kp SEMI  &kp Q     &kp J     &kp K     &kp X                                  &kp B     &kp M     &kp W     &kp V     HM_Z
-       //└─────────┴─────────┴─────────┴─────┬───┴─────┬───┼─────────┐        ┌─────────┼───┬─────┴───┬─────┴─────────┴─────────┴─────────┘
-                                             &mo NAV       &kp SPC  	    &mo NUM       &hm LCTL RET
-        //                                   └─────────┘   └─────────┘        └─────────┘   └─────────┘
-		>;
-		};
-
-          GIMP {
-		bindings = <
+      DEFAULT {
+        bindings = <
+          //┌─────────┬─────────┬─────────┬─────────┬─────────┐                            ┌─────────┬─────────┬─────────┬─────────┬─────────┐
+          HM_SQT    &kp CMMA  &kp DOT   &kp P     &kp Y	                                &kp F    &kp G      &kp C     &kp R     HM_L
+          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
+          HM_A      HM_O	     HM_E      HM_U      &kp I                                  &kp D      HM_H     HM_T      HM_N      HM_S
+          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
+          &kp SEMI  &kp Q     &kp J     &kp K     &kp X                                  &kp B     &kp M     &kp W     &kp V     HM_Z
+          //└─────────┴─────────┴─────────┴─────┬───┴─────┬───┼─────────┐        ┌─────────┼───┬─────┴───┬─────┴─────────┴─────────┴─────────┘
+          /**/                                 &mo NAV       &kp SPC  	        &mo NUM       &hm LCTL RET
+          //                                    └─────────┘   └─────────┘        └─────────┘   └─────────┘
+          >;
+      };
 
 
-        &hm LGUI Q  &kp W       &kp E       &kp R   &kp T	   &kp Y    &kp U   &kp I     &kp O         &ctrlp_hm_p
-     &hm LCTL A  &kp S       &ctrld	     &kp F   &kp G     &kp H    &kp J   &kp K     &kp L         &hm RCTL SEMI
-     &hm LGUI Z  &hm LALT X  &hm LSFT C  &kp V   &kp B 		 &kp N    &kp M   &kp CMMA  &hm RALT DOT  &hm RGUI SQT
-                                         &mo NAV &mt LSFT SPC  	 &mo NUM  &hm LCTL RET
-		>;
-		};
+      NUM {
+        bindings = <
+          //┌─────────┬─────────┬─────────┬─────────┬─────────┐                            ┌─────────┬─────────┬─────────┬─────────┬─────────┐
+          &kp LT		 &kp LBKT  &kp LPAR	  &kp LBRC  &kp TAB 			                      	&kp ESC     &kp NUM_7		&kp NUM_8	 &kp NUM_9	 &kp RALT
+          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
+          &kp GT		 &kp RBKT  &kp RPAR	  &kp RBRC  &kp SLASH		                        	&kp QMARK		  &kp NUM_4		&kp NUM_5	 &kp NUM_6	 &kp BSPC
+          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
+          &kp MINUS	 &kp EQUAL &kp UNDER  &kp PLUS  &kp GRAVE		                         	&kp NUM_0	  &kp NUM_1		&kp NUM_2	 &kp NUM_3	 &kp BSLH
+          //└─────────┴─────────┴─────────┴─────┬───┴─────┬───┼─────────┐        ┌─────────┼───┬─────┴───┬─────┴─────────┴─────────┴─────────┘
+          /**/                                 &trans        &trans  		       		&trans      &trans
+          //                                    └─────────┘   └─────────┘        └─────────┘   └─────────┘
+          >;
+      };
 
+      NAV {
+        bindings = <
+          //┌─────────┬─────────┬─────────┬─────────┬─────────┐                            ┌─────────┬─────────┬─────────┬─────────┬─────────┐
+          &kp NUM_1   &kp NUM_2       &kp NUM_3     &kp NUM_4      &kp NUM_5		        &kp HOME         &kp PG_UP   &kp PG_DN   &kp END     &kp NUM_0
+          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
+          &kp LCTL    &kp LSFT        &kp LALT      &kp LGUI       &kp ESC 		          &kp LEFT         &kp DOWN    &kp UP      &kp RIGHT   &kp BSPC
+          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
+          &bt BT_CLR  &bt BT_SEL 0  	&bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3         &kp LG(GRAVE)    &kp GRAVE   &kp LBKT    &kp RBKT    &kp DEL
+          //└─────────┴─────────┴─────────┴─────┬───┴─────┬───┼─────────┐        ┌─────────┼───┬─────┴───┬─────┴─────────┴─────────┴─────────┘
+          /**/                                 &trans         &trans  	       &trans         &trans
+          //                                    └─────────┘   └─────────┘        └─────────┘   └─────────┘
+          >;
+      };
 
-       		NUM {
-		bindings = <
-		&kp LT		 &kp LBKT 	 &kp LPAR	    &kp LBRC	 &kp TAB 				&kp ESC     &kp NUM_7		&kp NUM_8	 &kp NUM_9	 &kp RALT
-		&kp GT		 &kp RBKT 	 &kp RPAR	    &kp RBRC   &kp SLASH			&kp QMARK		  &kp NUM_4		&kp NUM_5	 &kp NUM_6	 &kp BSPC
-		&kp MINUS	 &kp EQUAL	 &kp UNDER	  &kp PLUS	 &kp GRAVE			&kp NUM_0	  &kp NUM_1		&kp NUM_2	 &kp NUM_3	 &kp BSLH
-		                                    &trans     &trans  				&trans      &trans
-		>;
-		};
+      FN {
+        bindings = <
+          //┌─────────┬─────────┬─────────┬─────────┬─────────┐                            ┌─────────┬─────────┬─────────┬─────────┬─────────┐
+          &kp F1	    &kp F2    &kp F3   &kp F4	    &kp F5	                           		&kp F6   	&kp F7  	&kp F8  	&kp F9	  &kp F10
+          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
+          &trans	   &trans	    &trans   &trans	    &trans                                &trans   &trans   	&none	    &kp F11  	&kp F12
+          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
+          &trans	   &trans	    &trans   &trans	    &none			                          	&none   	&none    	&none    	&none	    &none
+          //└─────────┴─────────┴─────────┴─────┬───┴─────┬───┼─────────┐        ┌─────────┼───┬─────┴───┬─────┴─────────┴─────────┴─────────┘
+          /**/                                &trans        &trans 		        	&trans        &trans
+          //                                    └─────────┘   └─────────┘        └─────────┘   └─────────┘
+          >;
+      };
 
-       		NAV {
-		bindings = <
-		&kp NUM_1   &kp NUM_2       &kp NUM_3     &kp NUM_4      &kp NUM_5		        &kp HOME         &kp PG_UP   &kp PG_DN   &kp END     &kp NUM_0
-		&kp LCTL    &kp LSFT        &kp LALT      &kp LGUI       &kp ESC 		          &kp LEFT         &kp DOWN    &kp UP      &kp RIGHT   &kp BSPC
-		&bt BT_CLR  &bt BT_SEL 0  	&bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3         &kp LG(GRAVE)    &kp GRAVE   &kp LBKT    &kp RBKT    &kp DEL
-					                                    &trans         &trans  		          &trans           &trans
-		>;
-		};
+      BT {
+        bindings = <
+          //┌─────────┬─────────┬─────────┬─────────┬─────────┐                            ┌─────────┬─────────┬─────────┬─────────┬─────────┐
+          &kp NUM_1	    &kp NUM_2	    &kp NUM_3	    &kp NUM_4	&kp NUM_5                   &trans	  &trans	  		 &trans	  		 &trans			   &trans
+          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
+          &kp F1	      &kp F2	      &kp F3	      &kp F4		&kp F5  	                  &trans	  &bt BT_SEL 0	 &bt BT_SEL 1	 &bt BT_SEL 2	 &trans
+          //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
+          &bt BT_CLR	  &bt BT_NXT		&bt BT_PRV    &kp F6		&kp F7 			               	&trans	   &kp PG_DN 		 &kp K_VOL_DN	 &trans		  	 &trans
+          //└─────────┴─────────┴─────────┴─────┬───┴─────┬───┼─────────┐        ┌─────────┼───┬─────┴───┬─────┴─────────┴─────────┴─────────┘
+          /**/                                 &trans        &trans  		          	&trans      &trans
+          //                                    └─────────┘   └─────────┘        └─────────┘   └─────────┘
+          >;
+      };
 
-		FN {
-		bindings = <
-		&kp F1	    &kp F2	        &kp F3	      &kp F4	          &kp F5			&kp F6	&kp F7	&kp F8	&kp F9	&kp F10
-		&kp C_PP	  &kp C_MUTE	    &kp C_VOL_DN	&kp C_VOL_UP	    &to DEFAULT &to GIMP 	&none	  &kp F11	&kp F12
-		&kp C_PREV	&kp C_NEXT	    &kp C_BRI_DN	&kp C_BRI_UP	    &none				&none 	&none 	&none  	&none	  &none
-                                                    &trans      &trans 			&trans  &trans
-		>;
-		};
-
-		BT {
-		bindings = <
-		&kp NUM_1	    &kp NUM_2	    &kp NUM_3	    &kp NUM_4	&kp NUM_5     &trans	    &trans	  		 &trans	  		 &trans			   &trans
-		&kp F1	      &kp F2	      &kp F3	      &kp F4		&kp F5  	    &trans	    &bt BT_SEL 0	 &bt BT_SEL 1	 &bt BT_SEL 2	 &trans
-		&bt BT_CLR	  &bt BT_NXT		&bt BT_PRV    &kp F6		&kp F7 				&trans	    &kp PG_DN 		 &kp K_VOL_DN	 &trans		  	 &trans
-					                                    &trans    &trans  			&trans      &trans
-		>;
-		};
-
-		MOUSE {
-		bindings = <
-		&kp LALT	&kp LC(W)	    &none	        &kp LC(R)	        &kp LC(T)		&kp LA(LEFT)	&mwh SCROLL_DOWN	&mmv MOVE_UP	  &mwh SCROLL_UP        &kp LA(RIGHT)
-		&kp LC(A)	&kp LS(TAB)	  &kp RALT	    &kp TAB	          &none	      &kp M	        &mmv MOVE_LEFT    &mmv MOVE_DOWN	&mmv MOVE_RIGHT	      &none
-		&kp LC(Z)	&kp LC(X)	    &kp LC(C)	    &kp LC(V)	        &kp ESC	    &none	        &mkp RCLK	        &none	          &none	                &kp LALT
-		                                      &mkp RCLK         &mkp LCLK 	&to DEFAULT   &mkp LCLK
-		>;
-		};
-
-	};
+    };
 };
