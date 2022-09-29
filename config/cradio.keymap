@@ -73,10 +73,15 @@
 
         combo_bootloader {
             timeout-ms = <50>;
-            key-positions = <10 11 12 13>;
+            key-positions = <00 01 02 03>;
             bindings = <&bootloader>;
         };
 
+        combo_1 {
+          timeout-ms = <50>;
+          key-positions = <00 10>;
+          bindings = <&kp NUM_1>;
+        };
 
     };
 
