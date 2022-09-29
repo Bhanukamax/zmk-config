@@ -45,7 +45,7 @@
   hml: homerow_layers {
       compatible = "zmk,behavior-hold-tap";
       label = "HOMEROW_LAYERS";
-#binding-cells = <2>;
+      #binding-cells = <2>;
       tapping-term-ms = <300>;
       quick-tap-ms = <0>;
       flavor = "tap-preferred";
@@ -54,54 +54,12 @@
   hm: homerow_mods {
       compatible = "zmk,behavior-hold-tap";
       label = "HOMEROW_MODS";
-#binding-cells = <2>;
+      #binding-cells = <2>;
       tapping-term-ms = <250>;
       quick-tap-ms = <0>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
     };
-  rettab: ret_alt_tab {
-      compatible = "zmk,behavior-mod-morph";
-      label = "RET_ALT_TAB";
-#binding-cells = <0>;
-      bindings = <&kp RET>, <&kp TAB>;
-      mods = <(MOD_RALT)>;
-    };
-  numtab: num_tab {
-      compatible = "zmk,behavior-mod-morph";
-      label = "NUM_ALT_TAB";
-#binding-cells = <0>;
-      bindings = <&mo NUM>, <&kp LS(TAB)>;
-      mods = <(MOD_RALT)>;
-};
-        navstab: nav_tab {
-            compatible = "zmk,behavior-mod-morph";
-            label = "NAV_ALT_SHIFT_TAB";
-            #binding-cells = <0>;
-            bindings = <&mo NAV>, <&kp LS(TAB)>;
-            mods = <(MOD_LALT)>;
-        };
-        shftspctab: shift_space_tab {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SHIFT_SPACE_ALT_TAB";
-            #binding-cells = <0>;
-            bindings = <&mt LSFT SPC>, <&kp TAB>;
-            mods = <(MOD_LALT)>;
-        };
-        ctrld: ctrl_d_and_mouse_d {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CTRL_D_AND_MOUSE_D";
-            #binding-cells = <0>;
-            bindings = <&hml MOUSE D>, <&kp D>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
-        };
-        ctrlp_hm_p: ctrl_p_and_hm_p {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CTRL_P_AND_HM_P";
-            #binding-cells = <0>;
-            bindings = <&hm F13 P>, <&kp P>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
-        };
     };
 
 
