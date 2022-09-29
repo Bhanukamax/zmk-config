@@ -82,6 +82,51 @@
           key-positions = <00 10>;
           bindings = <&kp NUM_1>;
         };
+        combo_2 {
+          timeout-ms = <50>;
+          key-positions = <01 11>;
+          bindings = <&kp NUM_2>;
+        };
+        combo_3 {
+          timeout-ms = <50>;
+          key-positions = <02 12>;
+          bindings = <&kp NUM_3>;
+        };
+        combo_4 {
+          timeout-ms = <50>;
+          key-positions = <03 13>;
+          bindings = <&kp NUM_4>;
+        };
+        combo_5 {
+          timeout-ms = <50>;
+          key-positions = <04 14>;
+          bindings = <&kp NUM_5>;
+        };
+        combo_6 {
+          timeout-ms = <50>;
+          key-positions = <05 15>;
+          bindings = <&kp NUM_6>;
+        };
+        combo_7 {
+          timeout-ms = <50>;
+          key-positions = <06 16>;
+          bindings = <&kp NUM_7>;
+        };
+        combo_8 {
+          timeout-ms = <50>;
+          key-positions = <07 17>;
+          bindings = <&kp NUM_8>;
+        };
+        combo_9 {
+          timeout-ms = <50>;
+          key-positions = <08 18>;
+          bindings = <&kp NUM_9>;
+        };
+        combo_0 {
+          timeout-ms = <50>;
+          key-positions = <09 19>;
+          bindings = <&kp NUM_0>;
+        };
 
     };
 
