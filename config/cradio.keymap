@@ -135,6 +135,20 @@
           bindings = <&kp NUM_0>;
         };
 
+        combo_caps_word_l {
+          timeout-ms = <50>;
+          key-positions = <10 20>;
+          bindings = <&caps_word>;
+        };
+
+        combo_caps_word_r {
+          timeout-ms = <50>;
+          key-positions = <19 29>;
+          bindings = <&caps_word>;
+        };
+
+
+
     };
 
     /*
