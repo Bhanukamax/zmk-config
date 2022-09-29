@@ -89,6 +89,13 @@
           bindings = <&kp NUM_2>;
         };
 
+
+        combo_3 {
+          timeout-ms = <50>;
+          key-positions = <02 12>;
+          bindings = <&kp NUM_3>;
+        };
+
     };
 
     /*
