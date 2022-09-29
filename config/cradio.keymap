@@ -77,6 +77,13 @@
             bindings = <&bootloader>;
         };
 
+
+        combo_bootloader_left {
+            timeout-ms = <50>;
+            key-positions = <26 27 28 29>;
+            bindings = <&bootloader>;
+        };
+
     };
 
     /*
