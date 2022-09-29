@@ -119,6 +119,12 @@
           bindings = <&kp NUM_7>;
         };
 
+        combo_8 {
+          timeout-ms = <50>;
+          key-positions = <07 17>;
+          bindings = <&kp NUM_8>;
+        };
+
     };
 
     /*
