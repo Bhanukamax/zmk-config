@@ -10,12 +10,12 @@
 #include <dt-bindings/zmk/mouse.h>
 
 #define DEFAULT 0
-#define GIMP 1
-#define NUM 2
-#define NAV 3
-#define FN 4
-#define BT 5
-#define MOUSE 6
+#define NUM 1
+#define NAV 2
+#define FN 3
+#define BT 4
+#define MOUSE 5
+
 
 #define HM_A  &hm LSFT A
 #define HM_O  &hm LCTL O
