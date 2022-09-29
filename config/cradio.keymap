@@ -121,7 +121,7 @@
 
         combo_nine {
           timeout-ms = <50>;
-          key-positions = <08 17>;
+          key-positions = <07 17>;
           bindings = <&kp NUM_9>;
         };
 
