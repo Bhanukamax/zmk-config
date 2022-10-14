@@ -28,7 +28,9 @@
 #define HM_H  &hm RGUI H
 
 #define HM_SQT  &hm RCTL SQT
-#define HM_L  &hm RCTL L
+#define HM_L &hm RCTL L
+
+#define SHIFT_TAB &hm LSFT TAB
 
 #define HM_Z  &hm RGUI Z
 
@@ -181,11 +183,11 @@
       NUM {
         bindings = <
           //┌─────────┬─────────┬─────────┬─────────┬─────────┐                            ┌─────────┬─────────┬─────────┬─────────┬─────────┐
-          &kp LT		 &kp LBKT  &kp LPAR	  &kp LBRC  &kp TAB 			                      	&kp ESC     &kp NUM_7		&kp NUM_8	 &kp NUM_9	 &kp RALT
+          &kp NUM_1		 &kp NUM_2  &kp NUM_3	  &kp NUM_4  &kp NUM_5 			                  &kp NUM_6     &kp NUM_7		&kp NUM_8	 &kp NUM_9	 &kp NUM_0
           //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-          &kp GT		 &kp RBKT  &kp RPAR	  &kp RBRC  &kp SLASH		                        	&kp QMARK		  &kp NUM_4		&kp NUM_5	 &kp NUM_6	 &kp BSPC
+          SHIFT_TAB	 &kp RBKT  &kp MINUS	  &kp LBKT  &kp SLASH		                        	&kp QMARK		  &kp RBKT		&kp EQUAL	 &trans	 &kp BSPC
           //├─────────┼─────────┼─────────┼─────────┼─────────┤                            ├─────────┼─────────┼─────────┼─────────┼─────────┤
-          &kp MINUS	 &kp EQUAL &kp UNDER  &kp PLUS  &kp GRAVE		                         	&kp NUM_0	  &kp NUM_1		&kp NUM_2	 &kp NUM_3	 &kp BSLH
+          &kp GRAVE	 &kp LPAR  &kp UNDER  &kp LBRC  &kp BSLH		                         	&kp LS(BSLH)	  &kp RBRC	&kp PLUS  	&kp RPAR	 &trans
           //└─────────┴─────────┴─────────┴─────┬───┴─────┬───┼─────────┐        ┌─────────┼───┬─────┴───┬─────┴─────────┴─────────┴─────────┘
           /**/                                 &trans        &kp ESC 		       	&trans      &trans
           //                                    └─────────┘   └─────────┘        └─────────┘   └─────────┘
